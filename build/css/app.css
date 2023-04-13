@@ -752,4 +752,50 @@ a {
   font-size: 2.8rem;
   margin: 0;
 }
+
+.cita {
+  background-image: url(../img/bg_citas.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5rem 0;
+  text-align: center;
+}
+.cita__heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #FFFFFF;
+  font-size: 6rem;
+}
+.cita__texto {
+  max-width: 60rem;
+  margin: 0 auto;
+  color: #FFFFFF;
+  line-height: 2;
+}
+.cita__enlace {
+  background-color: #8ed3cc;
+  padding: 2rem 2rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color;
+  transition-duration: 300ms;
+  padding: 2rem 10rem;
+}
+@media (min-width: 768px) {
+  .cita__enlace {
+    width: auto;
+  }
+}
+.cita__enlace:hover {
+  background-color: #69c5bb;
+}
 /*# sourceMappingURL=app.css.map */
