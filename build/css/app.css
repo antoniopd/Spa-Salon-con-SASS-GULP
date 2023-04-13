@@ -678,4 +678,78 @@ a {
 .tabla__td {
   padding: 1rem;
 }
+
+.productos__heading {
+  text-align: center;
+  color: #e082a8;
+  font-family: "Italianno", sans-serif;
+  line-height: 0.8;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+.productos__heading span {
+  color: #000;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+.productos__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .productos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .productos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.producto__contenido {
+  background-color: #FFFFFF;
+  padding: 2rem;
+}
+.producto__mask {
+  overflow: hidden;
+}
+.producto__imagen {
+  width: 100%;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 300ms;
+}
+.producto__imagen:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.producto__nombre {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 4rem;
+  font-size: 2.4rem;
+  color: #e082a8;
+}
+.producto__descripcion {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+.producto__precio {
+  text-align: center;
+  color: #979797;
+  font-size: 2.8rem;
+  margin: 0;
+}
 /*# sourceMappingURL=app.css.map */
